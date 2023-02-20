@@ -1,53 +1,73 @@
-# if else 
-appleprice=int(input('enter the appleprice :'))
-budget=150;
+# function
 
-if(appleprice< budget):
-    print("Wow we got the apple !")
+def gmean(a,b):
+    mean=(a*b)/(a+b)
+    print(mean)
+  
+def isgreater(a,b):
+    if (a>b):
+        print('The first number is greater')
+    else:
+        print("the second number is greater")
+a= 9
+b=8
+gmean(a, b)
+isgreater(a, b)
+
+d=10
+e= 15
+
+gmean(d, e)
+isgreater(d,e)
+
+
+def fullname(fname,mname='jonh',lsname='watson'):
+    print('The fullname is :',fname,mname,lsname )
+fullname("kevin",)
+fullname("ninad","sunil","pandhare")
+
+# list
+lst=[2,4,5,1,9,1]
+lst.append(15)
+lst.sort()
+print(lst)
+print(type(lst),lst)
+print(lst[3])
+print(lst[5])
+
+if 5 in lst:
+    print('5 is present in the list')
 else:
-    print('Hmm i dont have money !')
-    
-#if elif else
+    print('5 is not presnt in the list')
 
-num=int(input('Enter the number :'))
+ls=lst[1:4]
+print(ls)
 
-if (num < 0):
-    print( "the number is negative")
-elif(num==80):
-    print("the number is special")
+# tuple
+tup=(9,4,5,"sam",True)
+print(type(tup),tup)
+print(tup[0])
+print(tup[3])
+
+countries=('finland','india','germany','united kingdom','korea','spain','netherland')
+print(type(countries),countries) # converting tuple into list
+tempr=list(countries)
+tempr.append('USA')
+print(type(tempr),tempr)
+countries=tuple(tempr) # converting list to tuple
+print(type(countries),countries)
+
+ #  Program based on hour 
+import time
+timestamp=time.strftime("%H:%M:%S")
+print(timestamp)
+hour=int(time.strftime('%H'))
+print(hour)
+# hour=int(input("enter the hour :"))
+if hour>=0 and hour<12:
+    print('Good Morning!')
+elif hour>12 and hour<18:
+    print('Good evening!')
 else:
-    print("number is positive")
-    
-    
-colors=['Red','orange','blue','pink']
-
-for color in colors:
-    print(color);
-    if (color=='orange'):
-        print('That my fav fruits')
-    elif (color =='blue'):
-        print('sky love')
-        
-  # while 
-        
-x=0;
-while x<= 30:
-    x=int(input('Enter the number :'))
-    print(x)
-print('loop is done')
-
-count=10  # decrement 
-while count > 0:
-   
-    print(count)
-    count=count-1
-
-
-for i in range(18):
-    print("4 X",i+1,"=",4*(i+1));
-
-
-
-
-
+    print("Good night!")
     
