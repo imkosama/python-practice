@@ -16,7 +16,7 @@ b.name='lovina'
 b.occupation='HR'
 b.info()
 
-Constructor
+# Constructor
 
 class person:
     def __init__(self): # Default constructor
@@ -35,7 +35,7 @@ class person:
 a=person("Sam", "Developer")
 a.info()
 
-Decorators
+# Decorators
 
 def greet(fx):
     def mfx():
@@ -49,7 +49,7 @@ def hello():
     
 hello()
 
-Getters and setter
+# Getters and setter
 class myclass:
     def __init__(self,val):
         self._value=val
