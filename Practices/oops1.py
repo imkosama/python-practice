@@ -32,3 +32,21 @@ c1=combineboth("soba",80) # modifiying programmer class and creating new class
 c1.showdetails()
 c1.showlanguage()
 c1.showextra()
+
+# Access spcifiers /Modifiers
+
+class students:
+    def __init__(self,name,id,age): # Public spcifiers / modifiers 
+        self._name=name
+        self._id=id
+        self.age=age
+obj=students("Laila",69)
+print(obj._name)
+print(obj.age)
+
+class Employee:
+    def __init__(self):
+        self.__name="Sam"  # private specifier with __name (double underscore name)
+obj1=Employee()
+print(obj1._Employee__name)
+print(obj1.__dir__()) # to check how many methods we can apply on obj1
